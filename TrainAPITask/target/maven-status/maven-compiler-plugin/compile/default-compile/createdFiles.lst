@@ -1,0 +1,10 @@
+com\train\model\User.class
+com\train\service\TrainService.class
+com\train\controller\TrainController.class
+com\train\controller\TicketController.class
+com\train\service\TicketService.class
+com\train\controller\UserController.class
+com\train\dto\UserDto.class
+com\train\TrainApiTaskApplication.class
+com\train\dto\TicketDto.class
+com\train\model\Ticket.class

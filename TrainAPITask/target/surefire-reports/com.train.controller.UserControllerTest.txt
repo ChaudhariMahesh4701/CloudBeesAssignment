@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.train.controller.UserControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.427 s <<< FAILURE! -- in com.train.controller.UserControllerTest
+com.train.controller.UserControllerTest.testGetAllUser -- Time elapsed: 0.045 s <<< FAILURE!
+Argument(s) are different! Wanted:
+userMapMock.putIfAbsent(
+    "jfr-gdrh-sgrh",
+    User(userId=43819eb5-6b6d-47ec-a934-f81b2f3d076f, firstName=Abc, lastName=Def, email=Abc.def@example.com)
+);
+-> at java.base/java.util.Map.putIfAbsent(Map.java:822)
+Actual invocations have different arguments at position [0]:
+userMapMock.putIfAbsent(
+    "43819eb5-6b6d-47ec-a934-f81b2f3d076f",
+    User(userId=43819eb5-6b6d-47ec-a934-f81b2f3d076f, firstName=Abc, lastName=Def, email=Abc.def@example.com)
+);
+-> at com.train.controller.UserController.createUser(UserController.java:32)
+
+	at java.base/java.util.Map.putIfAbsent(Map.java:822)
+	at com.train.controller.UserControllerTest.testGetAllUser(UserControllerTest.java:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.train.controller.UserControllerTest.testCreateUser -- Time elapsed: 0.007 s <<< FAILURE!
+Argument(s) are different! Wanted:
+userMapMock.putIfAbsent(
+    "qwqs-dufr-nfrd",
+    User(userId=86e23037-e454-4a58-a0d3-7c0fb9eed8c9, firstName=John, lastName=Doe, email=john.doe@example.com)
+);
+-> at java.base/java.util.Map.putIfAbsent(Map.java:822)
+Actual invocations have different arguments at position [0]:
+userMapMock.putIfAbsent(
+    "86e23037-e454-4a58-a0d3-7c0fb9eed8c9",
+    User(userId=86e23037-e454-4a58-a0d3-7c0fb9eed8c9, firstName=John, lastName=Doe, email=john.doe@example.com)
+);
+-> at com.train.controller.UserController.createUser(UserController.java:32)
+
+	at java.base/java.util.Map.putIfAbsent(Map.java:822)
+	at com.train.controller.UserControllerTest.testCreateUser(UserControllerTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
